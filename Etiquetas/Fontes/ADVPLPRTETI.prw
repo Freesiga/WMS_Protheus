@@ -4,9 +4,9 @@
 
 /*/{Protheus.doc} ADVPLPRTETI
 (long_description)
-@author danielbraga
-@since 07/09/2016
-@version 1.0
+@author Tony Santos - Freesiga
+@since 07/06/2018
+@version 2.0
 @example
 (examples)
 @see (links_or_references)
@@ -39,9 +39,9 @@ endclass
 
 /*/{Protheus.doc} new
 Metodo construtor
-@author danielbraga
-@since 07/09/2016 
-@version 1.0
+@author Tony Santos
+@since 07/06/2016 
+@version 2.0
 @example
 (examples)
 @see (links_or_references)
@@ -240,11 +240,9 @@ method print() class ADVPLPRTETI
 	local lContinua 	:= .f.
 	local cQuery		:= ""
 	local cPorta		:= ""
-	local cParam		:= ""
 	local cModelo		:= ""
 	local nDir			:= 0
 	local nQtdCpoia		:= 1
-	local lCancela      := .f.
 	local cCodFila      :=""
 	local lImp			:= .t.
 	

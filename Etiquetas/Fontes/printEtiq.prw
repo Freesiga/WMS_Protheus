@@ -3,18 +3,17 @@
 #INCLUDE "FWEDITPANEL.CH"
 
 /*/{Protheus.doc} printEtiq
-//TODO Descrição auto-gerada.
-@author Daniel Braga
-@since 09/05/2016
-@version 1.0
-@return nil, ""
+Programa para impressão de Etiquetas no Protheus
+@author Tony Santos - Freesiga
+@since 01/02/2017
+@version 2.0
+@return 
 @example
 (examples)
 @see (links_or_references)
 /*/
 
 User Function printEtiq()
-
 	
 	Local oBrowse := FWMBrowse():New() 
 
@@ -27,11 +26,11 @@ Return
 Static Function MenuDef()
 	private aRotina := {}
 
-	ADD OPTION aRotina TITLE 'Visualizar'	ACTION 'VIEWDEF.printEtiq' OPERATION 2 ACCESS 0
-	ADD OPTION aRotina TITLE 'Incluir'		ACTION 'VIEWDEF.printEtiq' OPERATION 3 ACCESS 0
-	ADD OPTION aRotina TITLE 'Alterar'		ACTION 'VIEWDEF.printEtiq' OPERATION 4 ACCESS 0
-	ADD OPTION aRotina TITLE 'Excluir'		ACTION 'VIEWDEF.printEtiq' OPERATION 5 ACCESS 0
-	ADD OPTION aRotina TITLE 'Simular'      ACTION 'U_SimulPrint()'    OPERATION 6 ACCESS 0
+	ADD OPTION aRotina Title 'Visualizar'	Action 'VIEWDEF.printEtiq' OPERATION 2 ACCESS 0
+	ADD OPTION aRotina Title 'Incluir'		Action 'VIEWDEF.printEtiq' OPERATION 3 ACCESS 0
+	ADD OPTION aRotina Title 'Alterar'		Action 'VIEWDEF.printEtiq' OPERATION 4 ACCESS 0
+	ADD OPTION aRotina Title 'Excluir'		Action 'VIEWDEF.printEtiq' OPERATION 5 ACCESS 0
+	ADD OPTION aRotina Title 'Imprimir'      Action 'U_SimulPrint()'    OPERATION 6 ACCESS 0
 
 Return aRotina
 
